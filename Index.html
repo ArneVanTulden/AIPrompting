@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A detailed blueprint for an art exhibition website showcasing artists, galleries, and events.">
+    <title>Art Exhibition</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 2rem;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .hero {
+            background-image: url('hero-image.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #333;
+            text-align: center;
+            padding: 5rem 2rem;
+        }
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .section {
+            padding: 2rem;
+        }
+        .artists, .galleries, .events {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .card {
+            background: #f4f4f4;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+        .card h3 {
+            margin: 0.5rem 0;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Art Exhibition</h1>
+            <ul>
+                <li><a href="#artists">Artists</a></li>
+                <li><a href="#galleries">Galleries</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Welcome to the Art Exhibition</h2>
+        <p>Explore the finest collections of modern and classical art.</p>
+    </section>
+
+    <section id="artists" class="section">
+        <h2>Featured Artists</h2>
+        <div class="artists">
+            <div class="card">
+                <img src="Images\Artist1.png" alt="Artwork by Artist Name" style="width: 80%; height: auto;">
+                <h3>Theo Calder</h3>
+                <p>Theo Calder is a minimalist sculptor known for his geometric designs and use of industrial materials. His work explores the relationship between space, form, and light, creating striking yet simple pieces that evoke a sense of quiet balance.</p>
+            </div>
+            <div class="card">
+                <img src="Images\Artist2.png" alt="Artwork by Artist Name"style="width: 80%; height: auto;">
+                <h3>Lyra Saphire</h3>
+                <p>Lyra Saphire is a contemporary artist blending digital and traditional mediums. Her ethereal works combine vivid colors and intricate lines, inspired by dreams and nature. Saphire creates surreal, immersive landscapes that explore the connection between reality and imagination, inviting viewers to reflect on the world’s interconnectedness.</p>
+            </div>
+            <!-- Add more artist cards as needed -->
+        </div>
+    </section>
+
+    <section id="galleries" class="section">
+        <h2>Galleries</h2>
+        <div class="galleries">
+            <div class="card">
+                <img src="Images\Piece1.png" alt="Gallery Collection" style="width: 80%; height: auto;">
+                <h3>Equilibrium</h3>
+                <p>"Equilibrium" is a minimalist exploration of balance and tension, created from steel and concrete. The sculpture juxtaposes solid and void, with sharp geometric forms intersecting open spaces. Its industrial materials reflect a raw, modern aesthetic, while the play of light and shadow brings dynamic life to its static form. Standing in quiet solitude, "Equilibrium" invites viewers to reflect on the delicate harmony between contrasting forces in space and structure.</p>
+            </div>
+            <div class="card">
+                <img src="Images\Piece2.png" alt="Gallery Collection " style="width: 80%; height: auto;">
+                <h3>Eclipse Bloom</h3>
+                <p>Eclipse Bloom is a mixed-media masterpiece by Lyra Saphire, featuring a swirling, dreamlike garden illuminated by an otherworldly light. The piece combines hand-painted organic patterns with shimmering digital projections, creating a dynamic interplay of shadow and glow. It symbolizes cycles of growth and renewal, capturing the beauty found in the fleeting moments between darkness and light..</p>
+            </div>
+            <!-- Add more gallery cards as needed -->
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>Email: info@artexhibition.com</p>
+        <p>Phone: +123 456 7890</p>
+        <p>Address: 123 Art St, Creativity City</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Art Exhibition. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
